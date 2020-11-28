@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_date"
+            android:focusable="true"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height=" 70dp" />
+        <TextView
+            android:id="@+id/tv_refresh"
+            android:text="刷新"
+            android:layout_width=" 70dp"
+            android:layout_height=" 70dp" />
+    </LinearLayout>
+
+    <TextView
+android:id="@+id/tv_rsgz"
+        style="@style/ViewStyle_m70"/>
+    <TextView
+android:id="@+id/tv_bagua"
+        android:text="八卦"
+        style="@style/ViewStyle_m70"/>
+    <TextView
+android:id="@+id/tv_xuewei"
+        android:text="穴位"
+        style="@style/ViewStyle_m70"/>
+
+    <TextView
+        android:id="@+id/tv_location"
+        android:text="定位 "
+        android:focusable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tv_features"
+        android:text="功效"
+        android:focusable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tv_clinical"
+        android:text="临床 "
+        android:focusable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+        <!--第二个穴位-->
+        <LinearLayout
+            android:id="@+id/ll_second_info"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--就是照海-->
+            <TextView
+                android:text="男:照海"
+                style="@style/ViewStyle_m70"/>
+            <TextView
+                android:id="@+id/tv_location_second"
+                android:text="定位 "
+                android:focusable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tv_features_second"
+                android:text="功效"
+                android:focusable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tv_clinical_second"
+                android:text="临床 "
+                android:focusable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

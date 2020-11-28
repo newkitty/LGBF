@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectRSGZActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_above="@+id/tv_ok"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:text="请选择日干支"
+        style="@style/ViewStyle_m0"/>
+    <Spinner
+        android:id="@+id/sn_rtg"
+        style="@style/ViewStyle_m0"/>
+    <Spinner
+        android:id="@+id/sn_rdz"
+        style="@style/ViewStyle_m0"/>
+
+    <TextView
+        android:text="请选择时干支"
+        style="@style/ViewStyle_m0"/>
+    <Spinner
+        android:id="@+id/sn_sgz"
+        style="@style/ViewStyle_m0"/>
+
+
+    </LinearLayout>
+
+         <TextView
+        android:id="@+id/tv_ok"
+        android:text="确定"
+             android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="70dp" />
+</RelativeLayout>
